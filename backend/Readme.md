@@ -1,38 +1,67 @@
-# Deploy Backend
 # Technologies Used:
 
-Node.js
-Express.js
-CORS
+* Node.js
+* Express.js
+* CORS
 
-# Deploy Backend
+# 🚀 Deploy Backend
 
+## 📂 Go to Backend Folder
+
+```bash
 cd backend
+```
 
-* Install Node.js 
-apt update -y
-apt install nodejs npm -y
+---
 
-* Check version:
+## 🛠 Install Node.js (if not installed)
 
+```bash
+sudo apt update -y
+sudo apt install nodejs npm -y
+```
+
+---
+
+## ✅ Check Version
+
+```bash
 node -v
 npm -v
+```
 
-* Install Dependencies
+---
+
+## 📦 Install Dependencies
+
+```bash
 npm init -y
 npm install express cors
+```
 
-* Run Backend Server
+---
+
+## ▶️ Run Backend Server
+
+```bash
 node server.js
+```
 
-* After running the command, you should see:
+After running the command, you should see:
+
+```
 Server will start on http://localhost:5000
+```
 
-✔ Keep this terminal running.
+✔ Keep this terminal running.  
 ✔ Do NOT close it while testing the application.
 
-# Test backend:
+---
 
-* Open browser:
+# 🧪 Test Backend
 
+Open your browser and visit:
+
+```
 http://localhost:5000/students
+```

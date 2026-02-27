@@ -1,33 +1,65 @@
-# Technologies Used:
+# 🛠 Technologies Used
 
-HTML
-CSS
-JavaScript
-Fetch API
+- HTML  
+- CSS  
+- JavaScript  
+- Fetch API  
+- Node.js  
+- Express  
 
-# Deploy Frontend (Open New Terminal)
+---
 
+# 🌐 Deploy Frontend (Open New Terminal)
+
+## 📂 Go to Frontend Folder
+
+```bash
 cd frontend
-No installation required (pure HTML project).
-Open frontend in browser:
-Double click index.html
+```
 
-I
+## ▶️ Open in Browser
 
+Open the `index.html` file in your preferred web browser  
+(or simply double-click `index.html`).
 
+---
 
+# 🔗 How Frontend Connects to Backend
 
+- The backend runs on **Node.js** at:
 
+```
+http://localhost:5000
+```
 
+- The frontend sends HTTP requests using the **Fetch API** to:
 
+```
+http://localhost:5000/students
+```
 
+- Since both frontend and backend run on the same machine,  
+  `localhost` is used for communication.
 
+---
 
+# ⚙️ How It Works
 
+1. Start the backend server:
+   ```bash
+   node server.js
+   ```
 
-I ran the backend using Node.js on port 5000. Then I opened the frontend HTML file in the browser. The frontend communicates with the backend using fetch API and localhost.
-How did you connect frontend and backend?
+2. Open `index.html` in your browser.
 
-You say:
+3. The frontend uses `fetch()` to send requests to:
+   ```
+   http://localhost:5000
+   ```
 
-Backend runs on Node.js at localhost:5000. Frontend sends HTTP requests using fetch API to that port. Since both are on same machine, I used localhost for communication.
+4. The backend processes the request and sends a response.
+
+---
+
+✅ Keep the backend terminal running while testing.  
+✅ Do NOT close the backend server.
